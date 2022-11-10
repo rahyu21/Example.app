@@ -1,0 +1,44 @@
+body{
+    background: rgb(50, 48, 48);
+}
+.jumbotron{
+    padding: 5rem 5rem;
+}
+.sistem{
+    padding-left: 20%;
+    font-size: 25px;
+    color: aliceblue;
+}
+.rusu{
+    color: rgb(9, 162, 222);
+}
+.uni{
+    color: aliceblue;
+}
+.ini{
+    font-size: small;
+    color: aliceblue;
+}
+.agen{
+    font-size: 25px;
+    color: aliceblue;
+}
+.nawa{
+    font-size: 25px;
+    color:  #2080a9;
+}
+.ada{
+    color: aliceblue;
+}
+.a1{
+    font-size: small;
+    color: aliceblue;
+}
+.a2{
+    font-size: small;
+    color: aliceblue;
+}
+.a3{
+    font-size: small;
+    color: aliceblue;
+}
