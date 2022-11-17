@@ -35,7 +35,7 @@
                     </li>
                 </ul>
             </div>
-            <button type="button" class="btn btn-dark">Login</button>
+            <a href="/login"><button type="button" class="btn btn-dark">Login</button></a></a>
         </div>
     </nav>
     <!--Akhir Navbar-->

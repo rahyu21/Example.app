@@ -8,6 +8,8 @@ class StmikController extends Controller
 {
     public function index()
     {
-        return view('stmik');
+        return view('contoh.stmik', [
+
+        ]);
     }
 }
