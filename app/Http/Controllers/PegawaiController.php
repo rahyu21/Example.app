@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\PegawaiModel;
+use GrahamCampbell\ResultType\Success;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -11,10 +12,10 @@ class PegawaiController extends Controller
     public function index()
     {
        $pegawai = PegawaiModel::all();
-        return view('pegawai.index')->with('pegawai', $pegawai);
+        return view('pegawai.datapegawai')->with('pegawai', $pegawai);
     } 
     public function create(){
-        return view('Pegawai.create');
+        return view('Pegawai.tambahpegawai');
     }
     public function store(Request $request){
         PegawaiModel::create([
@@ -22,11 +23,11 @@ class PegawaiController extends Controller
             'email'=>$request->email,
             'alamat'=>$request->alamat
         ]);
-        return redirect(route('pegawai.index'));
+        return redirect(route('pegawai.datapegawai'));
     }
     public function edit($id){
         $pegawai = PegawaiModel::whereId($id)->first();
-        return view('Pegawai.edit')->with('pegawai', $pegawai);
+        return view('Pegawai.editpegawai')->with('pegawai', $pegawai);
     }
     public function update($id, Request $request){
         PegawaiModel::whereId($id)->update([
@@ -34,7 +35,7 @@ class PegawaiController extends Controller
             'email'=>$request->email,
             'alamat'=>$request->alamat,
         ]);
-        return redirect(route('pegawai.index'));
+        return redirect(route('pegawai.datapegawai'));
     }
     public function delete($id){
         PegawaiModel::whereId($id)->delete();
